@@ -3,37 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Styles/Shared.css">
+    <link rel="stylesheet" href="Styles/Home.css">
+    <script src="Scripts/auto-coupon.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="Images/Icons/LogoMain.png">
     <title>J's Coco</title>
 </head>
 <body>
     <header>
-        <div class="coupon-slider"></div>
-        <img src="Images/Icons/menu.svg" alt="menu">
+        <div class="coupon-slider">
+            <div class="coupon-slides"></div>
+        </div>
+        <img class="main-logo" src="Images/Icons/LogoMain.png" alt="logo">
 
         <nav class="header-nav">
+            <a href="index.html">HOME</a>
             <a href="shop.html">CHOCOLATE</a>
-            <a href="">GIFT SETS</a>
+            <a href="About.html">ABOUT US</a>
         </nav>
 
-        <img src="Images/Icons/shopping-cart.svg" alt="cart">
-        <img src="Images/Icons/user-icon.svg" alt="user">
-    </header>
+        <div class="header-icons">
+            <a href="Cart.html"><img src="Images/Icons/shopping-cart.svg" alt="cart"></a>
+            <a href="Account.html"><img src="Images/Icons/user-icon.svg" alt="user"></a>
+        </div>
+    </header>   
     <main>
         <div class="display-header">
             <img src="Images/Slides/Chocolate_Banner2.png" alt="Banner">
         </div>
         <section class="product-listing">
             <h2>MOST POPULAR</h2>
-            <a href=""><img src="Images/Products/Chocolate1.jpg" alt="Chocolate1"></a>
-            <a href=""><img src="Images/Products/Chocolate2.jpg" alt="Chocolate2"></a>
-            <a href=""><img src="Images/Products/Chocolate3.jpg" alt="Chocolate3"></a>
+            <div class="product-grid">
+                <div class="product-item">
+                    <a href=""><img src="Images/Products/Chocolate1.jpg" alt="Chocolate1"></a>
+                    <div class="product-title">Dark Chocolate Box</div>
+                </div>
+                <div class="product-item">
+                    <a href=""><img src="Images/Products/Chocolate2.jpg" alt="Chocolate2"></a>
+                    <div class="product-title">Milk Chocolate Collection</div>
+                </div>
+                <div class="product-item">
+                    <a href=""><img src="Images/Products/Chocolate3.jpg" alt="Chocolate3"></a>
+                    <div class="product-title">Assorted Truffles</div>
+                </div>
+            </div>
         </section>
+
         <section class="product-listing">
             <h2>NEW ARRIVALS</h2>
-            <a href=""><img src="Images/Products/ChocolateBundle1.png" alt="ChocolateBundle1"></a>
-            <a href=""><img src="Images/Products/ChocolateBundle2.png" alt="ChocolateBundle2"></a>
-            <a href=""><img src="Images/Products/ChocolateBundle3.png" alt="ChocolateBundle3"></a>
+            <div class="product-grid">
+                <div class="product-item">
+                    <a href=""><img src="Images/Products/ChocolateBundle1.png" alt="ChocolateBundle1"></a>
+                    <div class="product-title">Holiday Gift Set</div>
+                </div>
+                <div class="product-item">
+                    <a href=""><img src="Images/Products/ChocolateBundle2.png" alt="ChocolateBundle2"></a>
+                    <div class="product-title">Premium Collection</div>
+                </div>
+                <div class="product-item">
+                    <a href=""><img src="Images/Products/ChocolateBundle3.png" alt="ChocolateBundle3"></a>
+                    <div class="product-title">Luxury Chocolate Box</div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

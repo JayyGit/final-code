@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Home.css">
+    <link rel="stylesheet" href="Styles/Shared.css">
+    <link rel="stylesheet" href="Styles/Account.css">
+    <script src="Scripts/auto-coupon.js"></script>
+    <script src="Scripts/account.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="Images/Icons/LogoMain.png">
+    <title>J's Coco</title>
+</head>
+<body>
+    <header>
+        <div class="coupon-slider">
+            <div class="coupon-slides"></div>
+        </div>
+        <img class="main-logo" src="Images/Icons/LogoMain.png" alt="logo">
+
+        <nav class="header-nav">
+            <a href="index.html">HOME</a>
+            <a href="shop.html">CHOCOLATE</a>
+            <a href="About.html">ABOUT US</a>
+        </nav>
+
+        <div class="header-icons">
+            <a href="Cart.html"><img src="Images/Icons/shopping-cart.svg" alt="cart"></a>
+            <a href="Account.html"><img src="Images/Icons/user-icon.svg" alt="user"></a>
+        </div>
+    </header>   
+    <main>
+        <div class="account-nav">
+            <h1>YOUR ACCOUNT</h1>
+            <div class="nav-item active" onclick="showSection('account-settings')">Account Settings</div>
+            <div class="nav-item" onclick="showSection('privacy')">Privacy</div>
+            <div class="nav-item" onclick="showSection('your-orders')">Your Orders</div>
+            <div class="nav-item"><a href="Contact.html">Contact Us</a></div>
+        </div>
+        
+        <div class="account-content">
+            <div id="account-settings" class="content-section active">
+                <div class="account-settings">
+                    <h2>Account Settings</h2>
+                    <div class="setting-group">
+                        <h3>Personal Information</h3>
+                        <p>Update your name, email, and phone number</p>
+                    </div>
+                    <div class="setting-group">
+                        <h3>Password</h3>
+                        <p>Change your account password</p>
+                    </div>
+                    <div class="setting-group">
+                        <h3>Payment Methods</h3>
+                        <p>Manage your saved payment options</p>
+                    </div>
+                    <div class="setting-group">
+                        <h3>Address Book</h3>
+                        <p>Edit your shipping and billing addresses</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="privacy" class="content-section">
+                <div class="privacy-settings">
+                    <h2>Privacy Settings</h2>
+                    <div class="privacy-options">
+                        <div class="privacy-option">
+                            <h3>Data Sharing Preferences</h3>
+                            <p>Control how we use your data for personalization</p>
+                        </div>
+                        <div class="privacy-option">
+                            <h3>Email Notifications</h3>
+                            <p>Manage what emails you receive from us</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="your-orders" class="content-section">
+                <div class="orders-section">
+                    <h2>Your Orders</h2>
+                    <div class="orders-list">
+                        <div class="order-item">
+                            <p><strong>5:46pm May 1st 2025</strong></p>
+                            <p>Order #JB2025-5834-6969</p>
+                            <p>Status: Delivered</p>
+                        </div>
+                        
+                        <div class="order-item">
+                            <p><strong>3:42pm April 24th 2025</strong></p>
+                            <p>Order #JB2025-2949-1111</p>
+                            <p>Status: Shipped</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>Copyright <script>document.write(new Date().getFullYear());</script></span>
+        <div class="social">
+            <a href="https://fb.com"><img src="Images/Icons/facebook.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img src="Images/Icons/instagram.svg" alt="instagram"></a>
+            <a href="https://www.pinterest.com/"><img src="Images/Icons/pinterest.svg" alt="pinterest"></a>
+        </div>
+    </footer>
+</body>
+</html>
